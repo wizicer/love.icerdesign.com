@@ -1,3 +1,5 @@
+mixin img(src)
+  img(src="blank.gif", data-src=src, class="lazy")
 doctype html
 html(lang="en")
   head
@@ -16,90 +18,90 @@ html(lang="en")
         ul.timeline
           li.center
             figure.image
-              img(src="images/baby.jpg")
+              +img("images/baby.jpg")
             h2 女儿
             p 女儿长大了。
           li.right
             figure.image
-              img(src="images/hongyuan.jpg")
+              +img("images/hongyuan.jpg")
             h2 小小旅行团出发啦
             p “从南到北，从东往西”
             figure.image
-              img(src="images/yunnan.jpg")
+              +img("images/yunnan.jpg")
           li.left
             figure.image
-              img(src="images/babyborn.jpg")
+              +img("images/babyborn.jpg")
             h2 女儿
             h3 上海, 2014年
             p 女儿出生了，小可爱急着和爸爸一天生日的到来了。
           li.left
             figure.image
-              img(src="images/pregnancy.jpg")
+              +img("images/pregnancy.jpg")
           li.right
             figure.image
-              img(src="images/babybed.jpg")
+              +img("images/babybed.jpg")
             h2 宝宝来了
             p 一家人又开心又激动，爱情的结晶，小宝宝即将来到这个世上。
           li.center
             figure.image
-              img(src="images/wedding.jpg")
+              +img("images/wedding.jpg")
             h2 1024
             h3 上海, 2012年
             p 梦想成真，喜结连理
           li.left
             figure.image
-              img(src="images/board.jpg")
+              +img("images/board.jpg")
             h2 平平凡凡的日子
             p 只要两个人在一起，每一天都是平凡和开心的
           li.right
             figure.image
-              img(src="images/merryme.jpg")
+              +img("images/merryme.jpg")
           li.left
             figure.image
-              img(src="images/winter.jpg")
+              +img("images/winter.jpg")
             h2 家门前的座椅
             p 愿能一起老去，每日休闲的在阳光下畅谈往事
           li.center
             figure.image
-              img(src="images/newhome.jpg")
+              +img("images/newhome.jpg")
             h2 家之梦
             h3.meta 上海，2012年 
             p 一同经历了许多快乐与回忆，年轻的心想要安定下来了。
           li.left
             figure.image
-              img(src="images/sweetfoot.jpg")
+              +img("images/sweetfoot.jpg")
             h2 甜蜜的小脚丫
             p 一同走过许多的山山水水
           li.right
             figure.image
-              img(src="images/baggage.jpg")
+              +img("images/baggage.jpg")
             h2 重庆——上海
             p 把所有的行李打包，我们终于生活在一座城市里了。
             figure.image
-              img(src="images/map.png")
+              +img("images/map.png")
           li.left
             figure.image
-              img(src="images/zoo.jpg")
+              +img("images/zoo.jpg")
             h2 动物园
             p 一同去给小动物们拍呆萌的照片，想象着带小朋友过来的场景
           li.right
             figure.image
-              img(src="images/mountain.jpg")
+              +img("images/mountain.jpg")
             h2 四处旅游
             p 留下美好的回忆
             figure.image
-              img(src="images/usinmountain.jpg")
+              +img("images/usinmountain.jpg")
           li.left
             figure.image
-              img(src="images/together.jpg")
+              +img("images/together.jpg")
           li.right
             figure.image
-              img(src="images/beach.jpg")
+              +img("images/beach.jpg")
             h2 走过海边
             p 留下我们爱的痕迹
           li.center
             figure.image
-              img(src="images/2010.jpg")
+              +img("images/2010.jpg")
             h2 大师兄VS小师妹
             h3.meta 交大校园，2007年 
             p 那一年，她18岁，他21岁。他邀她进他的游戏团队，于是彼此熟悉起来了。
@@ -107,6 +109,7 @@ html(lang="en")
       a.footer-button(href='http://icerdesign.com') 回到冰河设计
     script(src="js/jquery.min.js")
     script(src="js/jquery.fittext.js")
+    script(src="js/lazyload.js")
     script(src="js/index.js")
     div(style="display:none;")
       script(language="javascript", type="text/javascript", src="http://js.users.51.la/17278963.js")
