@@ -61,7 +61,7 @@ module.exports = function(grunt) {
     express: {
         all: {
             options: {
-                bases: ['D:\\Work\\love.icerdesign.com'],
+                bases: ['./'],
                 port: 8080,
                 hostname: "0.0.0.0",
                 livereload: true
