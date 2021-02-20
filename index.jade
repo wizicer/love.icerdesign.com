@@ -1,5 +1,6 @@
 mixin img(src)
   img(src="images/blank.gif", data-src=src, class="lazy")
+  //- img(src=src)
 doctype html
 html(lang="en")
   head
@@ -18,6 +19,34 @@ html(lang="en")
         ul.timeline
           li.left
             figure.image
+              +img("images/2020together.jpg")
+            h2 登高望远
+            h3.meta 上海, 2021年
+            p
+              | 从2楼升到22楼，
+              br
+              | 向着“小目标”前进！
+            figure.image
+              +img("images/2020officescene.jpg")
+          li.right
+            figure.image
+              +img("images/2020yunschool.jpg")
+            blockquote.diary
+              p 其实，我家不止我一个人开学，爸爸也开学啦。爸爸跟我一样，也不一样。
+              p 一样的是，我们都读一年级。
+              p 不一样的是，我读的是小学一年级，爸爸是去读博士的一年级。
+              p.from 出自《云云日记》
+          li.left
+            h2 转折之年
+            h3.meta 上海, 2020年
+            p 宅家之年，互宠之年，学习之年，耕耘之年。
+            figure.image
+              +img("images/2020hometogether.jpg")
+          li.right
+            figure.image
+              +img("images/2019yunwinter.jpg")
+          li.left
+            figure.image
               +img("images/sutuexhibition.jpg")
             h2 扬帆起航
             h3.meta 上海, 2019年
@@ -27,6 +56,20 @@ html(lang="en")
           li.right
             figure.image
               +img("images/2019yun.jpg")
+          li.left
+            figure.image
+              +img("images/2019yunship.jpg")
+            h2 四处旅行
+            h3.meta 我是乘风破浪的小姐姐
+            figure.image
+              +img("images/2019yunfly.jpg")
+          li.right
+            figure.image
+              +img("images/2019beachfamily.jpg")
+            h2 一起开辟新地图
+            h3.meta “从不同的地方醒来，睁开眼睛都是你”
+            figure.image
+              +img("images/2019tokyotogether.jpg")
           li.center
             figure.image
               +img("images/2018travel.jpg")
