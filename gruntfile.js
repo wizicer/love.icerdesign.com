@@ -58,25 +58,24 @@ module.exports = function(grunt) {
         }
       }
     },
-    express: {
-        all: {
-            options: {
-                bases: ['./'],
-                port: 8080,
-                hostname: "0.0.0.0",
-                livereload: true
-            }
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          base: './',
+          livereload: true
         }
+      }
     },
 
     // grunt-watch will monitor the projects files
     // https://github.com/gruntjs/grunt-contrib-watch
     watch: {
       all: {
-              files: ['**/*.html', '**/*.js', '**/*.css'],
-              options: {
-                  livereload: true
-          }
+        files: ['**/*.html', '**/*.js', '**/*.css'],
+        options: {
+          livereload: true
+        }
       },
       jade: {
         files: '**/*.jade',
@@ -103,11 +102,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-express');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task(s).
-  grunt.registerTask('default', ['less:dev', 'jade:dev', 'express', 'watch']);
+  grunt.registerTask('default', ['less:dev', 'jade:dev', 'connect', 'watch']);
   grunt.registerTask('prod', ['less:prod', 'jade:prod']);
 
 };
-

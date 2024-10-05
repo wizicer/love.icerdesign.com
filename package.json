@@ -2,10 +2,10 @@
   "name": "love.icerdesign.com",
   "version": "0.0.1",
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.6.1",
+    "grunt-contrib-connect": "^5.0.0",
     "grunt-contrib-jade": "~1.0.0",
-    "grunt-contrib-less": "~2.0.0",
-    "grunt-contrib-watch": "~1.1.0",
-    "grunt-express": "~1.4.1"
+    "grunt-contrib-less": "~3.0.0",
+    "grunt-contrib-watch": "~1.1.0"
   }
 }
