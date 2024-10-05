@@ -380,6 +380,15 @@ html {
     background-color: @timeline;
     background-image: -webkit-linear-gradient(@shadow .25rem, @timeline 1.5rem);
 }
+
+.timeline .horizontal {
+    display: inine;
+}
+
+.timeline .flow {
+    display: none;
+}
+
 @media screen and (max-width: 680px) {
     .timeline .left, .timeline .right {
         float: none;
@@ -392,6 +401,14 @@ html {
     .timeline .right:before, .timeline .right:after,
     .timeline .center:before, .timeline .center:after {
         display: none
+    }
+
+    .timeline .horizontal {
+        display: none;
+    }
+
+    .timeline .flow {
+        display: inline;
     }
 }
 
